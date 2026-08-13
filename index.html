@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kakiikadaのポートフォリオサイト</title>
+    <title>ポートフォリオサイト</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/destyle.css">
@@ -23,7 +23,7 @@
         <div class="l-header_navIcon" id="js-header_navIcon">
             <div class="l-header_navIcon_1"></div><div class="l-header_navIcon_2"></div>
         </div>
-        <h1 class="l-header_logo"><a href="#content-top"><span>K</span>akiikada's <span>P</span>ortfolio</a></h1>
+        <h1 class="l-header_logo"><a href="#content-top"><span>M</span>y <span>P</span>ortfolio</a></h1>
         <nav>
             <ul class="l-header_nav" id="js-header_navLink">
                 <li><a class="js-header-navLink" href="#content-2">Works<span class="l-header_nav_slash"> / </span><span class="l-header_nav_subText">実績</span></a></li>
@@ -76,10 +76,10 @@
                         <div class="c-btn"><a class="js-cardBtn" target="_blank" rel="noopener noreferrer" href="https://github.com/kakiikada/study_typeScript">GitHub</a></div>
                     </div>
                 </li>
-                <li class="index-works_card">
-                    <img src="src/img/common/site-noImage.png" alt="コーディングサンプルサイト-1">
+                <li class="index-works_card js-cardClick" data-url="https://kakiikada.github.io/demo_webSite01/">
+                    <img src="src/img/index_demoCapture-2.png" alt="コーディングサンプルサイト-1">
                     <div class="index-works_card_textBox">
-                        <p>作成中 - コーディングサンプル</p>
+                        <p>遊園地 チケット購入デモサイト</p>
                         <ul class="index-works_card_skillIcon1">
                             <li>自主制作</li>
                         </ul>
@@ -93,9 +93,18 @@
                             <li>GitHub</li>
                             <li>figma</li>
                         </ul>
-                        <p class="index-works_card_text">AI生成によるデザインをもとにWebサイトをコーディングし、Reactを用いたコンポーネント設計や再利用性を意識した実装を行いました。機能追加や修正にも対応しやすいよう、保守性を考慮したコード設計を心がけています。</p>
-                        <p class="index-works_card_textPostscript">※AI生成画像の一部は素材として利用できないものがあったため、フリー素材などで代替し、デザイン全体の雰囲気を損なわないよう調整しています。</p>
+                        <p class="index-works_card_text">React / TypeScriptを使用して制作した、テーマパークのチケット購入を想定したデモサイトです。</p>
+                        <ul>
+                            <li>Reactを用いたサイト作成とコンポーネント設計を意識した実装</li>
+                            <li>フロントエンド側のフォームの実装（簡易な入力チェック・入力データ管理等・ライブラリを用いたカレンダー実装など）</li>
+                            <li>React Routerによるページ遷移</li>
+                            <li>ページ内での表示切替処理</li>
+                        </ul>
+                        <p class="index-works_card_textPostscript">※こちらは基本のデザインをAI生成で画像として生成し、それを基に手動でコーディングする手順で作成いたしました。その際に写真画像やアイコンなど出所の不明なデータをフリー素材に置き換えるなど調整して作成しています。</p>
                         <!-- <p class="index-works_card_button"><a href="">GitHub</a></p> -->
+                    </div>
+                    <div class="index-works_card_btn">
+                        <div class="c-btn"><a class="js-cardBtn" target="_blank" rel="noopener noreferrer" href="https://github.com/kakiikada/demo_webSite01">GitHub</a></div>
                     </div>
                 </li>
             </ul>
@@ -155,7 +164,7 @@
             <!-- <div><img src="" alt=""></div> -->
             <div>
                 <div class="index-about_name js-fadeIn">
-                    <span>Artist Name : </span><p>Kakiikada</p>
+                    <span>Artist Name : </span><p>H・S</p>
                 </div>
                 <div class="index-about_name js-fadeIn">
                     <span>Background : </span><p>2018年2月、広島から上京し、未経験で現在の企業に入社。現在東京在住。社内でWebコーディング・フロントエンドを学び、現在はSESとして現場で活動しています。</p>
@@ -181,7 +190,7 @@
     <div class="l-footer_pageTop"><a href="#content-top">PAGE TOP</a></div>
 <div class="l-footer_content">
     <a href="#content-top" class="footer_pageTop"></a>
-    <p class="l-footer_copy">© 2026 kakiikada. All rights reserved.</p>
+    <p class="l-footer_copy">© 2026 H・S. All rights reserved.</p>
 </div>
 </footer>
 </body>
