@@ -512,6 +512,8 @@ background-size: 3.75rem 3.75rem;
         .index-works_card_skillIcon1, .index-works_card_skillIcon2, .index-works_card_skillIcon3 {
             display: flex;
             margin-top: 0.25rem;
+            flex-wrap: wrap;
+            gap: 0.25rem;
             li {
                 color: #fff;
                 height: 1.5rem;
@@ -522,9 +524,6 @@ background-size: 3.75rem 3.75rem;
                 list-style: none;
                 background-color: var(--color-accent);
                 border: 0.0625rem solid var(--color-accent);
-                & + & {
-                    margin-left: 0.25rem;
-                }
             }
         }
         .index-works_card_skillIcon1 li {
