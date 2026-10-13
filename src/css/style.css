@@ -480,16 +480,15 @@ background-size: 3.75rem 3.75rem;
     }
 }
 .index-works_list {
+    margin-top: -2rem;
     .index-works_card {
         position: relative;
         display: block;
         background-color: #fff;
         box-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,0.2);
+        margin-top: 2rem;
         &[data-url] {
             cursor: pointer;
-        }
-        & + & {
-            margin-top: 1rem;
         }
         img {
             width: 100%;
@@ -562,9 +561,6 @@ background-size: 3.75rem 3.75rem;
                 transition: .3s;
                 &[data-url]:hover {
                     transform: translateY(-1.5rem);
-                }
-                & + & {
-                    margin-top: 0;
                 }
             }
         }

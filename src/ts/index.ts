@@ -25,14 +25,17 @@ if(menuLink){
 
 // スクロールでクラスを追加
 const fadeInTextTarget = document.querySelectorAll<HTMLElement>(".js-fadeIn");
-window.addEventListener("scroll", () => {
+const checkFadeIn = () => {
     fadeInTextTarget.forEach((item) => {
         const textPosition =  item.getBoundingClientRect();
         if (textPosition.top < window.innerHeight * 0.8) {
         item.classList.add("js-active");
       }
     })
-});
+};
+window.addEventListener("scroll", checkFadeIn);
+window.addEventListener("DOMContentLoaded", checkFadeIn);
+window.addEventListener("load", checkFadeIn);
 // ページ読み込みでクラスを追加
 
 const fadeInTextTargetOpen = document.querySelectorAll<HTMLElement>(".js-fadeInOpen");
